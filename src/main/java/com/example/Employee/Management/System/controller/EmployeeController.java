@@ -1,7 +1,9 @@
-package net.javaguides.springboot.controller;
+package com.example.Employee.Management.System.controller;
 
 import java.util.List;
 
+import com.example.Employee.Management.System.model.Employee;
+import com.example.Employee.Management.System.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
@@ -11,9 +13,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import net.javaguides.springboot.model.Employee;
-import net.javaguides.springboot.service.EmployeeService;
 
 @Controller
 public class EmployeeController {
